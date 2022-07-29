@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vp5Pl7qM2GReZTezII0a9mZuGUbyp1aq9fey5dzhwLZ4xrDhF6lxLDyw+UBrLUKy33Ajh4LkbSsCdARj7XTPvA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lomba\\source\\repos\\ApiViajes\\Businnes\\Businnes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lomba\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

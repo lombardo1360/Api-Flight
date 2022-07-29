@@ -1,0 +1,15 @@
+C:\Users\lomba\source\repos\ApiViajes\Businnes\bin\Debug\net6.0\Businnes.deps.json
+C:\Users\lomba\source\repos\ApiViajes\Businnes\bin\Debug\net6.0\Businnes.dll
+C:\Users\lomba\source\repos\ApiViajes\Businnes\bin\Debug\net6.0\Businnes.pdb
+C:\Users\lomba\source\repos\ApiViajes\Businnes\obj\Debug\net6.0\Businnes.csproj.AssemblyReference.cache
+C:\Users\lomba\source\repos\ApiViajes\Businnes\obj\Debug\net6.0\Businnes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lomba\source\repos\ApiViajes\Businnes\obj\Debug\net6.0\Businnes.AssemblyInfoInputs.cache
+C:\Users\lomba\source\repos\ApiViajes\Businnes\obj\Debug\net6.0\Businnes.AssemblyInfo.cs
+C:\Users\lomba\source\repos\ApiViajes\Businnes\obj\Debug\net6.0\Businnes.csproj.CoreCompileInputs.cache
+C:\Users\lomba\source\repos\ApiViajes\Businnes\obj\Debug\net6.0\Businnes.dll
+C:\Users\lomba\source\repos\ApiViajes\Businnes\obj\Debug\net6.0\refint\Businnes.dll
+C:\Users\lomba\source\repos\ApiViajes\Businnes\obj\Debug\net6.0\Businnes.pdb
+C:\Users\lomba\source\repos\ApiViajes\Businnes\obj\Debug\net6.0\ref\Businnes.dll
+C:\Users\lomba\source\repos\ApiViajes\Businnes\bin\Debug\net6.0\DataAccess.dll
+C:\Users\lomba\source\repos\ApiViajes\Businnes\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\lomba\source\repos\ApiViajes\Businnes\obj\Debug\net6.0\Businnes.csproj.CopyComplete
