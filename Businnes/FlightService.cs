@@ -6,16 +6,13 @@ namespace Businnes
     public class FlightService : IFlightService
     {
 
-        
-        
-
         public Journey GetJourney(Request request)
         {
             Journey journeyResponse = new Journey();
             FlightContext flightContext = new FlightContext();
             var flights = flightContext.GetFlightAsync();
 
-
+            //Hace unna verificacion si hay vuelos directos 
             foreach (var flight in flights.Result)
             {
                 if (request.Origin == flight.DepartureStation && request.Destination == flight.ArrivalStation)
@@ -28,6 +25,7 @@ namespace Businnes
                     return journeyResponse;
                 }
             }  
+            //Verifica si hay vuelos con escala en la ruta de origen y destino requerido 
             foreach (var flight1 in flights.Result)
              {
                 if (request.Origin == flight1.DepartureStation && request.Destination != flight1.ArrivalStation)
@@ -49,12 +47,6 @@ namespace Businnes
 
                 }
              }
-              
-                
-                    
-                
-                
-
             
             return journeyResponse;
 

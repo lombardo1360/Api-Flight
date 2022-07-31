@@ -18,12 +18,15 @@ namespace DataAccess
 
             using(var client = new HttpClient())
             {
+                //Consulta de datos de API
                 var httpResponse = await client.GetAsync(url);
                 try
                 {
                     if (httpResponse.IsSuccessStatusCode)
                     {
                         var content = await httpResponse.Content.ReadAsStringAsync();
+
+                        //Deserializa el Json recibido y lo transforma en una lista de objetos Flight
                         List<Flight> flights = JsonConvert.DeserializeObject<List<Flight>>(content);
                         return flights;
 
