@@ -14,7 +14,7 @@ namespace DataAccess
         public async Task<List<Flight>> GetFlightAsync()
         {
 
-            string url = "https://recruiting-api.newshore.es/api/flights/0";
+            string url = "https://recruiting-api.newshore.es/api/flights/1";
 
             using(var client = new HttpClient())
             {

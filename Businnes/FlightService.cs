@@ -18,39 +18,44 @@ namespace Businnes
 
             foreach (var flight in flights.Result)
             {
-                if (request.Origin == flight.DepartureStation )
+                if (request.Origin == flight.DepartureStation && request.Destination == flight.ArrivalStation)
                 {
-                    if (request.Destination == flight.ArrivalStation)
+
+                    journeyResponse.Origin = request.Origin;
+                    journeyResponse.Destination = request.Destination;
+                    journeyResponse.Flight.Add(flight);
+                    journeyResponse.Price += flight.Price;
+                    return journeyResponse;
+                }
+            }  
+            foreach (var flight1 in flights.Result)
+             {
+                if (request.Origin == flight1.DepartureStation && request.Destination != flight1.ArrivalStation)
+                {
+                    foreach (var flight2 in flights.Result)
+
                     {
-                        journeyResponse.Origin = request.Origin;
-                        journeyResponse.Destination = request.Destination;
-                        journeyResponse.Flight.Add(flight);
-                        journeyResponse.Price += flight.Price;
-                        return journeyResponse;
-                    }
-                    else
-                    {
-                        foreach (var flight1 in flights.Result)
+                        if (flight1.ArrivalStation == flight2.DepartureStation && request.Destination == flight2.ArrivalStation)
                         {
-                            if (flight.ArrivalStation == flight1.DepartureStation && request.Destination == flight1.ArrivalStation) 
-                            {
-                                journeyResponse.Origin = request.Origin;
-                                journeyResponse.Destination = request.Destination;
-                                journeyResponse.Flight.Add(flight);
-                                journeyResponse.Price += flight.Price;
-                                journeyResponse.Flight.Add(flight1);
-                                journeyResponse.Price += flight1.Price;
-                                return journeyResponse;
-                            }
-                            ;
+                            journeyResponse.Origin = request.Origin;
+                            journeyResponse.Destination = request.Destination;
+                            journeyResponse.Flight.Add(flight1);
+                            journeyResponse.Price += flight1.Price;
+                            journeyResponse.Flight.Add(flight2);
+                            journeyResponse.Price += flight2.Price;
+                            return journeyResponse;
                         }
                     }
-                    
+
                 }
+             }
+              
+                
+                    
+                
                 
 
-            }
-
+            
             return journeyResponse;
 
         }
